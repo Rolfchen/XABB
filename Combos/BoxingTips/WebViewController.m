@@ -14,18 +14,33 @@
 
 @implementation WebViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+@synthesize urlString = _urlString;
+@synthesize titleString = _titleString;
+
+-(id)initWithHTML:(NSString *)htmlString {
+    self = [super initWithNibName:@"WebViewController" bundle:nil];
     if (self) {
-        // Custom initialization
+        self.urlString = htmlString;
     }
     return self;
+    
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    titleLabel.text = self.titleString;
+    [banner setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"BannerBg"]]];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:self.urlString ofType:@"html"];
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    NSLog(@"URL String: %@ URL: %@", filePath, fileURL);
+    [webView loadRequest:[NSURLRequest requestWithURL:fileURL]];
+    
+    //HACK OUT THE SHADOW
+    for (UIView *subview in [webView.scrollView subviews]) {
+        if ([subview isKindOfClass:[UIImageView class]]) {
+            subview.hidden = YES;
+        }
+    }
     // Do any additional setup after loading the view from its nib.
 }
 

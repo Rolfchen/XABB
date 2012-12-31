@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BoxingTipsViewController : UIViewController
+@interface BoxingTipsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+    IBOutlet UITableView *tipsTable;
+    NSArray *tableSource;
+    IBOutlet UILabel *titleLabel;
+}
+
 
 @end

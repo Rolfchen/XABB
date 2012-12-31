@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface WebViewController : UIViewController
+@interface WebViewController : BaseViewController {
+    IBOutlet UIWebView *webView;
+    IBOutlet UILabel *titleLabel;
+    
+}
+
+@property (nonatomic, strong) NSString *urlString;
+@property (nonatomic, strong) NSString *titleString;
+-(id)initWithHTML:(NSString *)htmlString;
 
 @end

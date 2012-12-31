@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E1769761515746200D88901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1769751515746200D88901 /* UIKit.framework */; };
+		7E1769781515746200D88901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1769771515746200D88901 /* Foundation.framework */; };
+		7E17697A1515746200D88901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1769791515746200D88901 /* CoreGraphics.framework */; };
+		7E1769801515746200D88901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E17697E1515746200D88901 /* InfoPlist.strings */; };
+		7E1769821515746200D88901 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1769811515746200D88901 /* main.m */; };
+		7E1769861515746200D88901 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1769851515746200D88901 /* AppDelegate.m */; };
+		7E1769891515746200D88901 /* ComboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1769881515746200D88901 /* ComboViewController.m */; };
+		7E17698C1515746200D88901 /* ComboViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E17698A1515746200D88901 /* ComboViewController.xib */; };
+		7E2D51D8151DA61A00B39955 /* YoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D51D6151DA61A00B39955 /* YoutubeViewController.m */; };
+		7E2D51D9151DA61A00B39955 /* YoutubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2D51D7151DA61A00B39955 /* YoutubeViewController.xib */; };
+		7E2D51E0151DA67000B39955 /* GymViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D51DE151DA67000B39955 /* GymViewController.m */; };
+		7E2D51E1151DA67000B39955 /* GymViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2D51DF151DA67000B39955 /* GymViewController.xib */; };
+		7E2D51E5151DA68800B39955 /* TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2D51E3151DA68800B39955 /* TipsViewController.m */; };
+		7E2D51E6151DA68800B39955 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2D51E4151DA68800B39955 /* TipsViewController.xib */; };
+		7E406F301620EBD800A06F6E /* UniversCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F2F1620EBD800A06F6E /* UniversCondensed.ttf */; };
+		7E406F371620F2FC00A06F6E /* ComboBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F331620F2FC00A06F6E /* ComboBanner.png */; };
+		7E406F381620F2FC00A06F6E /* ComboBanner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F341620F2FC00A06F6E /* ComboBanner@2x.png */; };
+		7E406F391620F2FC00A06F6E /* ComboIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F351620F2FC00A06F6E /* ComboIcon@2x.png */; };
+		7E406F3A1620F2FC00A06F6E /* YouTubeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F361620F2FC00A06F6E /* YouTubeIcon@2x.png */; };
+		7E406F3E1620F4A800A06F6E /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F3B1620F4A800A06F6E /* Button.png */; };
+		7E406F3F1620F4A800A06F6E /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F3C1620F4A800A06F6E /* Button@2x.png */; };
+		7E406F401620F4A800A06F6E /* DundeeMason.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F3D1620F4A800A06F6E /* DundeeMason.png */; };
+		7E406F431620FCC800A06F6E /* YoutubeBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F411620FCC800A06F6E /* YoutubeBanner.png */; };
+		7E406F441620FCC800A06F6E /* YoutubeBanner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F421620FCC800A06F6E /* YoutubeBanner@2x.png */; };
+		7E406F4E1621026000A06F6E /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E406F4C1621026000A06F6E /* VideoViewController.m */; };
+		7E406F4F1621026000A06F6E /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E406F4D1621026000A06F6E /* VideoViewController.xib */; };
+		7E42185B1673FA9E00024764 /* DundeeList.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E4218531673FA9E00024764 /* DundeeList.json */; };
+		7E42185C1673FA9E00024764 /* 1. jab, left-block, jab, straight, left-hook, straight.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7E4218551673FA9E00024764 /* 1. jab, left-block, jab, straight, left-hook, straight.mp4 */; };
+		7E42185D1673FA9E00024764 /* 2. Right-body block, right-uppercut, left-hook, straight, right-duck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7E4218561673FA9E00024764 /* 2. Right-body block, right-uppercut, left-hook, straight, right-duck.mp4 */; };
+		7E42185E1673FA9E00024764 /* 3. Straight, left-hook, left-hook, straight, lean-back, straight, left-hook, straight, pull, straight, left-hook, straight.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7E4218571673FA9E00024764 /* 3. Straight, left-hook, left-hook, straight, lean-back, straight, left-hook, straight, pull, straight, left-hook, straight.mp4 */; };
+		7E42185F1673FA9E00024764 /* 4. Left-block, straight, left-hook, left-hook, left-uppercut, left-hook, right-hook.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7E4218581673FA9E00024764 /* 4. Left-block, straight, left-hook, left-hook, left-uppercut, left-hook, right-hook.mp4 */; };
+		7E4218601673FA9E00024764 /* 5. Left-uppercut, right-uppercut, left-uppercut, right-uppercut, left-hook, right-hook.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7E4218591673FA9E00024764 /* 5. Left-uppercut, right-uppercut, left-uppercut, right-uppercut, left-hook, right-hook.mp4 */; };
+		7E4218611673FA9E00024764 /* HandPadCombo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7E42185A1673FA9E00024764 /* HandPadCombo.mp4 */; };
+		7E4218661674019D00024764 /* BoxingTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4218641674019D00024764 /* BoxingTipsViewController.m */; };
+		7E4218671674019D00024764 /* BoxingTipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4218651674019D00024764 /* BoxingTipsViewController.xib */; };
+		7E42186B16740A2800024764 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E42186916740A2800024764 /* WebViewController.m */; };
+		7E42186C16740A2800024764 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E42186A16740A2800024764 /* WebViewController.xib */; };
+		7E42187616740B7700024764 /* boxingTips.css in Resources */ = {isa = PBXBuildFile; fileRef = 7E42187216740B7700024764 /* boxingTips.css */; };
+		7E42187716740B7700024764 /* orthodox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E42187316740B7700024764 /* orthodox.jpg */; };
+		7E42187816740B7700024764 /* southpaw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E42187416740B7700024764 /* southpaw.jpg */; };
+		7E42187916740B7700024764 /* stances.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E42187516740B7700024764 /* stances.html */; };
+		7E42187B167416A400024764 /* handwrap.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E42187A167416A400024764 /* handwrap.html */; };
+		7E424A2C169044120002B212 /* 3.0.5 in Resources */ = {isa = PBXBuildFile; fileRef = 7E424A28169044120002B212 /* 3.0.5 */; };
+		7E424A2D169044120002B212 /* handwrap in Resources */ = {isa = PBXBuildFile; fileRef = 7E424A29169044120002B212 /* handwrap */; };
+		7E424A2E169044120002B212 /* jquery-1.8.3.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 7E424A2A169044120002B212 /* jquery-1.8.3.min.js */; };
+		7E424A2F169044120002B212 /* jquery.mobile-1.2.0 in Resources */ = {isa = PBXBuildFile; fileRef = 7E424A2B169044120002B212 /* jquery.mobile-1.2.0 */; };
+		7E424A38169048EB0002B212 /* jquery-1.6.4.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 7E424A35169048EB0002B212 /* jquery-1.6.4.min.js */; };
+		7E424A39169048EB0002B212 /* jquery.mobile-1.0rc2.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 7E424A36169048EB0002B212 /* jquery.mobile-1.0rc2.min.css */; };
+		7E424A3A169048EB0002B212 /* jquery.mobile-1.0rc2.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 7E424A37169048EB0002B212 /* jquery.mobile-1.0rc2.min.js */; };
+		7E424A3C16904A4A0002B212 /* jquery-1.6.4.js in Sources */ = {isa = PBXBuildFile; fileRef = 7E424A3B16904A4A0002B212 /* jquery-1.6.4.js */; };
+		7E424A3D16904FEB0002B212 /* jquery-1.6.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 7E424A3B16904A4A0002B212 /* jquery-1.6.4.js */; };
+		7E424A3E16904FF30002B212 /* jquery.mobile-1.0rc2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 7E424A37169048EB0002B212 /* jquery.mobile-1.0rc2.min.js */; };
+		7E424A4116905F280002B212 /* TipsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E424A3F16905F280002B212 /* TipsIcon.png */; };
+		7E424A4216905F280002B212 /* TipsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E424A4016905F280002B212 /* TipsIcon@2x.png */; };
+		7E523A22161DC749002806FD /* ComboIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A17161DC749002806FD /* ComboIcon.png */; };
+		7E523A23161DC749002806FD /* BLOCK(L)Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A19161DC749002806FD /* BLOCK(L)Image.jpg */; };
+		7E523A24161DC749002806FD /* BLOCK(R)Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A1A161DC749002806FD /* BLOCK(R)Image.jpg */; };
+		7E523A25161DC749002806FD /* HOOK(L)Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A1B161DC749002806FD /* HOOK(L)Image.jpg */; };
+		7E523A26161DC749002806FD /* HOOK(R)Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A1C161DC749002806FD /* HOOK(R)Image.jpg */; };
+		7E523A27161DC749002806FD /* JABImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A1D161DC749002806FD /* JABImage.jpg */; };
+		7E523A28161DC749002806FD /* STRAIGHTImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A1E161DC749002806FD /* STRAIGHTImage.jpg */; };
+		7E523A29161DC749002806FD /* UPPERCUT(L)Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A1F161DC749002806FD /* UPPERCUT(L)Image.jpg */; };
+		7E523A2A161DC749002806FD /* UPPERCUT(R)Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A20161DC749002806FD /* UPPERCUT(R)Image.jpg */; };
+		7E523A2B161DC749002806FD /* logo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A21161DC749002806FD /* logo2.gif */; };
+		7E523A2D161DCAD3002806FD /* YouTubeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A2C161DCAD3002806FD /* YouTubeIcon.png */; };
+		7E523A2F161DCD4F002806FD /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A2E161DCD4F002806FD /* Icon57.png */; };
+		7E523A31161DCD53002806FD /* Icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A30161DCD53002806FD /* Icon114.png */; };
+		7E523A33161DCDC0002806FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A32161DCDC0002806FD /* Default.png */; };
+		7E523A35161DCDC3002806FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E523A34161DCDC3002806FD /* Default@2x.png */; };
+		7E71892F1662525E00C9ABE7 /* BannerBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E71892E1662525E00C9ABE7 /* BannerBg.png */; };
+		7E7189321662536500C9ABE7 /* BannerBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7189311662536400C9ABE7 /* BannerBg@2x.png */; };
+		7E88E9CF151D7D26002BB7F3 /* GalleryScroll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E88E9CC151D7D26002BB7F3 /* GalleryScroll.xib */; };
+		7E88E9D0151D7D26002BB7F3 /* GalleryScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E88E9CE151D7D26002BB7F3 /* GalleryScrollViewController.m */; };
+		7E88E9D6151D7DAD002BB7F3 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E88E9D3151D7DAC002BB7F3 /* ImageScrollView.m */; };
+		7E88E9D7151D7DAD002BB7F3 /* TilingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E88E9D5151D7DAD002BB7F3 /* TilingView.m */; };
+		7E88E9D9151D7E0E002BB7F3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E88E9D8151D7E0E002BB7F3 /* QuartzCore.framework */; };
+		7E88E9DD151D7F31002BB7F3 /* ComboDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E88E9DB151D7F31002BB7F3 /* ComboDetailViewController.m */; };
+		7E88E9DE151D7F31002BB7F3 /* ComboDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E88E9DC151D7F31002BB7F3 /* ComboDetailViewController.xib */; };
+		7E88E9F7151D8F88002BB7F3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E88E9F6151D8F88002BB7F3 /* BaseViewController.m */; };
+		7EA1D87E151D5F9F008A5DA7 /* ComboListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1D87C151D5F9F008A5DA7 /* ComboListViewController.m */; };
+		7EA1D87F151D5F9F008A5DA7 /* ComboListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA1D87D151D5F9F008A5DA7 /* ComboListViewController.xib */; };
+		7EA494E616906EBD001A5D11 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA494E416906EA4001A5D11 /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E1769711515746200D88901 /* Dundee Boxing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dundee Boxing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1769751515746200D88901 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E1769771515746200D88901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E1769791515746200D88901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E17697D1515746200D88901 /* Combos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Combos-Info.plist"; sourceTree = "<group>"; };
+		7E17697F1515746200D88901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E1769811515746200D88901 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7E1769831515746200D88901 /* Combos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Combos-Prefix.pch"; sourceTree = "<group>"; };
+		7E1769841515746200D88901 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7E1769851515746200D88901 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7E1769871515746200D88901 /* ComboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ComboViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7E1769881515746200D88901 /* ComboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComboViewController.m; sourceTree = "<group>"; };
+		7E17698B1515746200D88901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ComboViewController.xib; sourceTree = "<group>"; };
+		7E2D51D5151DA61A00B39955 /* YoutubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YoutubeViewController.h; path = YouTube/YoutubeViewController.h; sourceTree = "<group>"; };
+		7E2D51D6151DA61A00B39955 /* YoutubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YoutubeViewController.m; path = YouTube/YoutubeViewController.m; sourceTree = "<group>"; };
+		7E2D51D7151DA61A00B39955 /* YoutubeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YoutubeViewController.xib; path = YouTube/YoutubeViewController.xib; sourceTree = "<group>"; };
+		7E2D51DD151DA67000B39955 /* GymViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GymViewController.h; path = "My gym/GymViewController.h"; sourceTree = "<group>"; };
+		7E2D51DE151DA67000B39955 /* GymViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GymViewController.m; path = "My gym/GymViewController.m"; sourceTree = "<group>"; };
+		7E2D51DF151DA67000B39955 /* GymViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GymViewController.xib; path = "My gym/GymViewController.xib"; sourceTree = "<group>"; };
+		7E2D51E2151DA68800B39955 /* TipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipsViewController.h; path = "Health Tips/TipsViewController.h"; sourceTree = "<group>"; };
+		7E2D51E3151DA68800B39955 /* TipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipsViewController.m; path = "Health Tips/TipsViewController.m"; sourceTree = "<group>"; };
+		7E2D51E4151DA68800B39955 /* TipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TipsViewController.xib; path = "Health Tips/TipsViewController.xib"; sourceTree = "<group>"; };
+		7E406F2F1620EBD800A06F6E /* UniversCondensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = UniversCondensed.ttf; path = resource/UniversCondensed.ttf; sourceTree = SOURCE_ROOT; };
+		7E406F331620F2FC00A06F6E /* ComboBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ComboBanner.png; sourceTree = "<group>"; };
+		7E406F341620F2FC00A06F6E /* ComboBanner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ComboBanner@2x.png"; sourceTree = "<group>"; };
+		7E406F351620F2FC00A06F6E /* ComboIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ComboIcon@2x.png"; sourceTree = "<group>"; };
+		7E406F361620F2FC00A06F6E /* YouTubeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YouTubeIcon@2x.png"; sourceTree = "<group>"; };
+		7E406F3B1620F4A800A06F6E /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		7E406F3C1620F4A800A06F6E /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		7E406F3D1620F4A800A06F6E /* DundeeMason.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DundeeMason.png; sourceTree = "<group>"; };
+		7E406F411620FCC800A06F6E /* YoutubeBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YoutubeBanner.png; sourceTree = "<group>"; };
+		7E406F421620FCC800A06F6E /* YoutubeBanner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YoutubeBanner@2x.png"; sourceTree = "<group>"; };
+		7E406F4B1621026000A06F6E /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		7E406F4C1621026000A06F6E /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		7E406F4D1621026000A06F6E /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		7E4218531673FA9E00024764 /* DundeeList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DundeeList.json; sourceTree = "<group>"; };
+		7E4218551673FA9E00024764 /* 1. jab, left-block, jab, straight, left-hook, straight.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1. jab, left-block, jab, straight, left-hook, straight.mp4"; sourceTree = "<group>"; };
+		7E4218561673FA9E00024764 /* 2. Right-body block, right-uppercut, left-hook, straight, right-duck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2. Right-body block, right-uppercut, left-hook, straight, right-duck.mp4"; sourceTree = "<group>"; };
+		7E4218571673FA9E00024764 /* 3. Straight, left-hook, left-hook, straight, lean-back, straight, left-hook, straight, pull, straight, left-hook, straight.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3. Straight, left-hook, left-hook, straight, lean-back, straight, left-hook, straight, pull, straight, left-hook, straight.mp4"; sourceTree = "<group>"; };
+		7E4218581673FA9E00024764 /* 4. Left-block, straight, left-hook, left-hook, left-uppercut, left-hook, right-hook.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4. Left-block, straight, left-hook, left-hook, left-uppercut, left-hook, right-hook.mp4"; sourceTree = "<group>"; };
+		7E4218591673FA9E00024764 /* 5. Left-uppercut, right-uppercut, left-uppercut, right-uppercut, left-hook, right-hook.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5. Left-uppercut, right-uppercut, left-uppercut, right-uppercut, left-hook, right-hook.mp4"; sourceTree = "<group>"; };
+		7E42185A1673FA9E00024764 /* HandPadCombo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HandPadCombo.mp4; sourceTree = "<group>"; };
+		7E4218631674019D00024764 /* BoxingTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxingTipsViewController.h; path = BoxingTips/BoxingTipsViewController.h; sourceTree = "<group>"; };
+		7E4218641674019D00024764 /* BoxingTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxingTipsViewController.m; path = BoxingTips/BoxingTipsViewController.m; sourceTree = "<group>"; };
+		7E4218651674019D00024764 /* BoxingTipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BoxingTipsViewController.xib; path = BoxingTips/BoxingTipsViewController.xib; sourceTree = "<group>"; };
+		7E42186816740A2800024764 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = BoxingTips/WebViewController.h; sourceTree = SOURCE_ROOT; };
+		7E42186916740A2800024764 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = BoxingTips/WebViewController.m; sourceTree = SOURCE_ROOT; };
+		7E42186A16740A2800024764 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = BoxingTips/WebViewController.xib; sourceTree = SOURCE_ROOT; };
+		7E42187216740B7700024764 /* boxingTips.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = boxingTips.css; sourceTree = "<group>"; };
+		7E42187316740B7700024764 /* orthodox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orthodox.jpg; sourceTree = "<group>"; };
+		7E42187416740B7700024764 /* southpaw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = southpaw.jpg; sourceTree = "<group>"; };
+		7E42187516740B7700024764 /* stances.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = stances.html; sourceTree = "<group>"; };
+		7E42187A167416A400024764 /* handwrap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = handwrap.html; sourceTree = "<group>"; };
+		7E424A28169044120002B212 /* 3.0.5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 3.0.5; sourceTree = "<group>"; };
+		7E424A29169044120002B212 /* handwrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = handwrap; sourceTree = "<group>"; };
+		7E424A2A169044120002B212 /* jquery-1.8.3.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.8.3.min.js"; sourceTree = "<group>"; };
+		7E424A2B169044120002B212 /* jquery.mobile-1.2.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "jquery.mobile-1.2.0"; sourceTree = "<group>"; };
+		7E424A35169048EB0002B212 /* jquery-1.6.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.6.4.min.js"; sourceTree = "<group>"; };
+		7E424A36169048EB0002B212 /* jquery.mobile-1.0rc2.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery.mobile-1.0rc2.min.css"; sourceTree = "<group>"; };
+		7E424A37169048EB0002B212 /* jquery.mobile-1.0rc2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.mobile-1.0rc2.min.js"; sourceTree = "<group>"; };
+		7E424A3B16904A4A0002B212 /* jquery-1.6.4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.6.4.js"; sourceTree = "<group>"; };
+		7E424A3F16905F280002B212 /* TipsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TipsIcon.png; sourceTree = "<group>"; };
+		7E424A4016905F280002B212 /* TipsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TipsIcon@2x.png"; sourceTree = "<group>"; };
+		7E523A17161DC749002806FD /* ComboIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ComboIcon.png; sourceTree = "<group>"; };
+		7E523A19161DC749002806FD /* BLOCK(L)Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BLOCK(L)Image.jpg"; sourceTree = "<group>"; };
+		7E523A1A161DC749002806FD /* BLOCK(R)Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BLOCK(R)Image.jpg"; sourceTree = "<group>"; };
+		7E523A1B161DC749002806FD /* HOOK(L)Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "HOOK(L)Image.jpg"; sourceTree = "<group>"; };
+		7E523A1C161DC749002806FD /* HOOK(R)Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "HOOK(R)Image.jpg"; sourceTree = "<group>"; };
+		7E523A1D161DC749002806FD /* JABImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JABImage.jpg; sourceTree = "<group>"; };
+		7E523A1E161DC749002806FD /* STRAIGHTImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = STRAIGHTImage.jpg; sourceTree = "<group>"; };
+		7E523A1F161DC749002806FD /* UPPERCUT(L)Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UPPERCUT(L)Image.jpg"; sourceTree = "<group>"; };
+		7E523A20161DC749002806FD /* UPPERCUT(R)Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UPPERCUT(R)Image.jpg"; sourceTree = "<group>"; };
+		7E523A21161DC749002806FD /* logo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo2.gif; sourceTree = "<group>"; };
+		7E523A2C161DCAD3002806FD /* YouTubeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouTubeIcon.png; sourceTree = "<group>"; };
+		7E523A2E161DCD4F002806FD /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon57.png; sourceTree = "<group>"; };
+		7E523A30161DCD53002806FD /* Icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon114.png; sourceTree = "<group>"; };
+		7E523A32161DCDC0002806FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7E523A34161DCDC3002806FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7E71892E1662525E00C9ABE7 /* BannerBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BannerBg.png; sourceTree = "<group>"; };
+		7E7189311662536400C9ABE7 /* BannerBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BannerBg@2x.png"; sourceTree = "<group>"; };
+		7E88E9CC151D7D26002BB7F3 /* GalleryScroll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryScroll.xib; sourceTree = "<group>"; };
+		7E88E9CD151D7D26002BB7F3 /* GalleryScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryScrollViewController.h; sourceTree = "<group>"; };
+		7E88E9CE151D7D26002BB7F3 /* GalleryScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GalleryScrollViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7E88E9D2151D7DAC002BB7F3 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ImageScrollView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7E88E9D3151D7DAC002BB7F3 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ImageScrollView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7E88E9D4151D7DAD002BB7F3 /* TilingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TilingView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7E88E9D5151D7DAD002BB7F3 /* TilingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TilingView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7E88E9D8151D7E0E002BB7F3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E88E9DA151D7F31002BB7F3 /* ComboDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboDetailViewController.h; sourceTree = "<group>"; };
+		7E88E9DB151D7F31002BB7F3 /* ComboDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboDetailViewController.m; sourceTree = "<group>"; };
+		7E88E9DC151D7F31002BB7F3 /* ComboDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComboDetailViewController.xib; sourceTree = "<group>"; };
+		7E88E9F5151D8F87002BB7F3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7E88E9F6151D8F88002BB7F3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7EA1D87B151D5F9F008A5DA7 /* ComboListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ComboListViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7EA1D87C151D5F9F008A5DA7 /* ComboListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ComboListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7EA1D87D151D5F9F008A5DA7 /* ComboListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComboListViewController.xib; sourceTree = "<group>"; };
+		7EA494E416906EA4001A5D11 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E17696E1515746200D88901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA494E616906EBD001A5D11 /* MediaPlayer.framework in Frameworks */,
+				7E88E9D9151D7E0E002BB7F3 /* QuartzCore.framework in Frameworks */,
+				7E1769761515746200D88901 /* UIKit.framework in Frameworks */,
+				7E1769781515746200D88901 /* Foundation.framework in Frameworks */,
+				7E17697A1515746200D88901 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E1769661515746200D88901 = {
+			isa = PBXGroup;
+			children = (
+				7E523A34161DCDC3002806FD /* Default@2x.png */,
+				7E523A32161DCDC0002806FD /* Default.png */,
+				7E523A30161DCD53002806FD /* Icon114.png */,
+				7E523A2E161DCD4F002806FD /* Icon57.png */,
+				7E4218621674016C00024764 /* BoxingTips */,
+				7E2D51DC151DA63D00B39955 /* Health Tips */,
+				7E2D51DB151DA63300B39955 /* My gym */,
+				7E2D51DA151DA62200B39955 /* Youtube */,
+				7E88E9F5151D8F87002BB7F3 /* BaseViewController.h */,
+				7E88E9F6151D8F88002BB7F3 /* BaseViewController.m */,
+				7E88E9CB151D7D26002BB7F3 /* ComboGallery */,
+				7EA1D867151D56D8008A5DA7 /* Resource */,
+				7E17697B1515746200D88901 /* Combos */,
+				7E1769741515746200D88901 /* Frameworks */,
+				7E1769721515746200D88901 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E1769721515746200D88901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E1769711515746200D88901 /* Dundee Boxing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E1769741515746200D88901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA494E416906EA4001A5D11 /* MediaPlayer.framework */,
+				7E88E9D8151D7E0E002BB7F3 /* QuartzCore.framework */,
+				7E1769751515746200D88901 /* UIKit.framework */,
+				7E1769771515746200D88901 /* Foundation.framework */,
+				7E1769791515746200D88901 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E17697B1515746200D88901 /* Combos */ = {
+			isa = PBXGroup;
+			children = (
+				7E1769841515746200D88901 /* AppDelegate.h */,
+				7E1769851515746200D88901 /* AppDelegate.m */,
+				7E1769871515746200D88901 /* ComboViewController.h */,
+				7E1769881515746200D88901 /* ComboViewController.m */,
+				7E17698A1515746200D88901 /* ComboViewController.xib */,
+				7E17697C1515746200D88901 /* Supporting Files */,
+				7EA1D87B151D5F9F008A5DA7 /* ComboListViewController.h */,
+				7EA1D87C151D5F9F008A5DA7 /* ComboListViewController.m */,
+				7EA1D87D151D5F9F008A5DA7 /* ComboListViewController.xib */,
+				7E88E9DA151D7F31002BB7F3 /* ComboDetailViewController.h */,
+				7E88E9DB151D7F31002BB7F3 /* ComboDetailViewController.m */,
+				7E88E9DC151D7F31002BB7F3 /* ComboDetailViewController.xib */,
+				7E406F4B1621026000A06F6E /* VideoViewController.h */,
+				7E406F4C1621026000A06F6E /* VideoViewController.m */,
+				7E406F4D1621026000A06F6E /* VideoViewController.xib */,
+				7E42186816740A2800024764 /* WebViewController.h */,
+				7E42186916740A2800024764 /* WebViewController.m */,
+				7E42186A16740A2800024764 /* WebViewController.xib */,
+			);
+			path = Combos;
+			sourceTree = "<group>";
+		};
+		7E17697C1515746200D88901 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E17697D1515746200D88901 /* Combos-Info.plist */,
+				7E17697E1515746200D88901 /* InfoPlist.strings */,
+				7E1769811515746200D88901 /* main.m */,
+				7E1769831515746200D88901 /* Combos-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E2D51DA151DA62200B39955 /* Youtube */ = {
+			isa = PBXGroup;
+			children = (
+				7E2D51D5151DA61A00B39955 /* YoutubeViewController.h */,
+				7E2D51D6151DA61A00B39955 /* YoutubeViewController.m */,
+				7E2D51D7151DA61A00B39955 /* YoutubeViewController.xib */,
+			);
+			name = Youtube;
+			sourceTree = "<group>";
+		};
+		7E2D51DB151DA63300B39955 /* My gym */ = {
+			isa = PBXGroup;
+			children = (
+				7E2D51DD151DA67000B39955 /* GymViewController.h */,
+				7E2D51DE151DA67000B39955 /* GymViewController.m */,
+				7E2D51DF151DA67000B39955 /* GymViewController.xib */,
+			);
+			name = "My gym";
+			sourceTree = "<group>";
+		};
+		7E2D51DC151DA63D00B39955 /* Health Tips */ = {
+			isa = PBXGroup;
+			children = (
+				7E2D51E2151DA68800B39955 /* TipsViewController.h */,
+				7E2D51E3151DA68800B39955 /* TipsViewController.m */,
+				7E2D51E4151DA68800B39955 /* TipsViewController.xib */,
+			);
+			name = "Health Tips";
+			sourceTree = "<group>";
+		};
+		7E406F321620EBDD00A06F6E /* font */ = {
+			isa = PBXGroup;
+			children = (
+				7E406F2F1620EBD800A06F6E /* UniversCondensed.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		7E4218521673FA9E00024764 /* Combos */ = {
+			isa = PBXGroup;
+			children = (
+				7E4218531673FA9E00024764 /* DundeeList.json */,
+				7E4218541673FA9E00024764 /* HandPad */,
+			);
+			path = Combos;
+			sourceTree = "<group>";
+		};
+		7E4218541673FA9E00024764 /* HandPad */ = {
+			isa = PBXGroup;
+			children = (
+				7E4218551673FA9E00024764 /* 1. jab, left-block, jab, straight, left-hook, straight.mp4 */,
+				7E4218561673FA9E00024764 /* 2. Right-body block, right-uppercut, left-hook, straight, right-duck.mp4 */,
+				7E4218571673FA9E00024764 /* 3. Straight, left-hook, left-hook, straight, lean-back, straight, left-hook, straight, pull, straight, left-hook, straight.mp4 */,
+				7E4218581673FA9E00024764 /* 4. Left-block, straight, left-hook, left-hook, left-uppercut, left-hook, right-hook.mp4 */,
+				7E4218591673FA9E00024764 /* 5. Left-uppercut, right-uppercut, left-uppercut, right-uppercut, left-hook, right-hook.mp4 */,
+				7E42185A1673FA9E00024764 /* HandPadCombo.mp4 */,
+			);
+			path = HandPad;
+			sourceTree = "<group>";
+		};
+		7E4218621674016C00024764 /* BoxingTips */ = {
+			isa = PBXGroup;
+			children = (
+				7E4218631674019D00024764 /* BoxingTipsViewController.h */,
+				7E4218641674019D00024764 /* BoxingTipsViewController.m */,
+				7E4218651674019D00024764 /* BoxingTipsViewController.xib */,
+			);
+			name = BoxingTips;
+			sourceTree = "<group>";
+		};
+		7E42187116740B7700024764 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				7E424A3B16904A4A0002B212 /* jquery-1.6.4.js */,
+				7E424A35169048EB0002B212 /* jquery-1.6.4.min.js */,
+				7E424A36169048EB0002B212 /* jquery.mobile-1.0rc2.min.css */,
+				7E424A37169048EB0002B212 /* jquery.mobile-1.0rc2.min.js */,
+				7E424A28169044120002B212 /* 3.0.5 */,
+				7E424A29169044120002B212 /* handwrap */,
+				7E424A2A169044120002B212 /* jquery-1.8.3.min.js */,
+				7E424A2B169044120002B212 /* jquery.mobile-1.2.0 */,
+				7E42187A167416A400024764 /* handwrap.html */,
+				7E42187216740B7700024764 /* boxingTips.css */,
+				7E42187316740B7700024764 /* orthodox.jpg */,
+				7E42187416740B7700024764 /* southpaw.jpg */,
+				7E42187516740B7700024764 /* stances.html */,
+			);
+			path = HTML;
+			sourceTree = SOURCE_ROOT;
+		};
+		7E523A16161DC749002806FD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7E424A3F16905F280002B212 /* TipsIcon.png */,
+				7E424A4016905F280002B212 /* TipsIcon@2x.png */,
+				7E7189311662536400C9ABE7 /* BannerBg@2x.png */,
+				7E71892E1662525E00C9ABE7 /* BannerBg.png */,
+				7E406F411620FCC800A06F6E /* YoutubeBanner.png */,
+				7E406F421620FCC800A06F6E /* YoutubeBanner@2x.png */,
+				7E406F3B1620F4A800A06F6E /* Button.png */,
+				7E406F3C1620F4A800A06F6E /* Button@2x.png */,
+				7E406F3D1620F4A800A06F6E /* DundeeMason.png */,
+				7E406F331620F2FC00A06F6E /* ComboBanner.png */,
+				7E406F341620F2FC00A06F6E /* ComboBanner@2x.png */,
+				7E406F351620F2FC00A06F6E /* ComboIcon@2x.png */,
+				7E406F361620F2FC00A06F6E /* YouTubeIcon@2x.png */,
+				7E523A2C161DCAD3002806FD /* YouTubeIcon.png */,
+				7E523A17161DC749002806FD /* ComboIcon.png */,
+				7E523A18161DC749002806FD /* ComboImages */,
+				7E523A21161DC749002806FD /* logo2.gif */,
+			);
+			path = images;
+			sourceTree = SOURCE_ROOT;
+		};
+		7E523A18161DC749002806FD /* ComboImages */ = {
+			isa = PBXGroup;
+			children = (
+				7E523A19161DC749002806FD /* BLOCK(L)Image.jpg */,
+				7E523A1A161DC749002806FD /* BLOCK(R)Image.jpg */,
+				7E523A1B161DC749002806FD /* HOOK(L)Image.jpg */,
+				7E523A1C161DC749002806FD /* HOOK(R)Image.jpg */,
+				7E523A1D161DC749002806FD /* JABImage.jpg */,
+				7E523A1E161DC749002806FD /* STRAIGHTImage.jpg */,
+				7E523A1F161DC749002806FD /* UPPERCUT(L)Image.jpg */,
+				7E523A20161DC749002806FD /* UPPERCUT(R)Image.jpg */,
+			);
+			path = ComboImages;
+			sourceTree = "<group>";
+		};
+		7E88E9CB151D7D26002BB7F3 /* ComboGallery */ = {
+			isa = PBXGroup;
+			children = (
+				7E88E9D2151D7DAC002BB7F3 /* ImageScrollView.h */,
+				7E88E9D3151D7DAC002BB7F3 /* ImageScrollView.m */,
+				7E88E9D4151D7DAD002BB7F3 /* TilingView.h */,
+				7E88E9D5151D7DAD002BB7F3 /* TilingView.m */,
+				7E88E9CC151D7D26002BB7F3 /* GalleryScroll.xib */,
+				7E88E9CD151D7D26002BB7F3 /* GalleryScrollViewController.h */,
+				7E88E9CE151D7D26002BB7F3 /* GalleryScrollViewController.m */,
+			);
+			name = ComboGallery;
+			path = "UI Tools";
+			sourceTree = "<group>";
+		};
+		7EA1D867151D56D8008A5DA7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7E42187116740B7700024764 /* HTML */,
+				7E4218521673FA9E00024764 /* Combos */,
+				7E406F321620EBDD00A06F6E /* font */,
+				7E523A16161DC749002806FD /* images */,
+			);
+			name = Resource;
+			path = Combos/Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E1769701515746200D88901 /* Dundee Boxing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E17698F1515746200D88901 /* Build configuration list for PBXNativeTarget "Dundee Boxing" */;
+			buildPhases = (
+				7E17696D1515746200D88901 /* Sources */,
+				7E17696E1515746200D88901 /* Frameworks */,
+				7E17696F1515746200D88901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dundee Boxing";
+			productName = Combos;
+			productReference = 7E1769711515746200D88901 /* Dundee Boxing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E1769681515746200D88901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Australian Tourism Data Warehouse";
+			};
+			buildConfigurationList = 7E17696B1515746200D88901 /* Build configuration list for PBXProject "Combos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E1769661515746200D88901;
+			productRefGroup = 7E1769721515746200D88901 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E1769701515746200D88901 /* Dundee Boxing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E17696F1515746200D88901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1769801515746200D88901 /* InfoPlist.strings in Resources */,
+				7E17698C1515746200D88901 /* ComboViewController.xib in Resources */,
+				7EA1D87F151D5F9F008A5DA7 /* ComboListViewController.xib in Resources */,
+				7E88E9CF151D7D26002BB7F3 /* GalleryScroll.xib in Resources */,
+				7E88E9DE151D7F31002BB7F3 /* ComboDetailViewController.xib in Resources */,
+				7E2D51D9151DA61A00B39955 /* YoutubeViewController.xib in Resources */,
+				7E2D51E1151DA67000B39955 /* GymViewController.xib in Resources */,
+				7E2D51E6151DA68800B39955 /* TipsViewController.xib in Resources */,
+				7E523A22161DC749002806FD /* ComboIcon.png in Resources */,
+				7E523A23161DC749002806FD /* BLOCK(L)Image.jpg in Resources */,
+				7E523A24161DC749002806FD /* BLOCK(R)Image.jpg in Resources */,
+				7E523A25161DC749002806FD /* HOOK(L)Image.jpg in Resources */,
+				7E523A26161DC749002806FD /* HOOK(R)Image.jpg in Resources */,
+				7E523A27161DC749002806FD /* JABImage.jpg in Resources */,
+				7E523A28161DC749002806FD /* STRAIGHTImage.jpg in Resources */,
+				7E523A29161DC749002806FD /* UPPERCUT(L)Image.jpg in Resources */,
+				7E523A2A161DC749002806FD /* UPPERCUT(R)Image.jpg in Resources */,
+				7E523A2B161DC749002806FD /* logo2.gif in Resources */,
+				7E523A2D161DCAD3002806FD /* YouTubeIcon.png in Resources */,
+				7E523A2F161DCD4F002806FD /* Icon57.png in Resources */,
+				7E523A31161DCD53002806FD /* Icon114.png in Resources */,
+				7E523A33161DCDC0002806FD /* Default.png in Resources */,
+				7E523A35161DCDC3002806FD /* Default@2x.png in Resources */,
+				7E406F301620EBD800A06F6E /* UniversCondensed.ttf in Resources */,
+				7E406F371620F2FC00A06F6E /* ComboBanner.png in Resources */,
+				7E406F381620F2FC00A06F6E /* ComboBanner@2x.png in Resources */,
+				7E406F391620F2FC00A06F6E /* ComboIcon@2x.png in Resources */,
+				7E406F3A1620F2FC00A06F6E /* YouTubeIcon@2x.png in Resources */,
+				7E406F3E1620F4A800A06F6E /* Button.png in Resources */,
+				7E406F3F1620F4A800A06F6E /* Button@2x.png in Resources */,
+				7E406F401620F4A800A06F6E /* DundeeMason.png in Resources */,
+				7E406F431620FCC800A06F6E /* YoutubeBanner.png in Resources */,
+				7E406F441620FCC800A06F6E /* YoutubeBanner@2x.png in Resources */,
+				7E406F4F1621026000A06F6E /* VideoViewController.xib in Resources */,
+				7E71892F1662525E00C9ABE7 /* BannerBg.png in Resources */,
+				7E7189321662536500C9ABE7 /* BannerBg@2x.png in Resources */,
+				7E42185B1673FA9E00024764 /* DundeeList.json in Resources */,
+				7E42185C1673FA9E00024764 /* 1. jab, left-block, jab, straight, left-hook, straight.mp4 in Resources */,
+				7E42185D1673FA9E00024764 /* 2. Right-body block, right-uppercut, left-hook, straight, right-duck.mp4 in Resources */,
+				7E42185E1673FA9E00024764 /* 3. Straight, left-hook, left-hook, straight, lean-back, straight, left-hook, straight, pull, straight, left-hook, straight.mp4 in Resources */,
+				7E42185F1673FA9E00024764 /* 4. Left-block, straight, left-hook, left-hook, left-uppercut, left-hook, right-hook.mp4 in Resources */,
+				7E4218601673FA9E00024764 /* 5. Left-uppercut, right-uppercut, left-uppercut, right-uppercut, left-hook, right-hook.mp4 in Resources */,
+				7E4218611673FA9E00024764 /* HandPadCombo.mp4 in Resources */,
+				7E4218671674019D00024764 /* BoxingTipsViewController.xib in Resources */,
+				7E42186C16740A2800024764 /* WebViewController.xib in Resources */,
+				7E42187616740B7700024764 /* boxingTips.css in Resources */,
+				7E42187716740B7700024764 /* orthodox.jpg in Resources */,
+				7E42187816740B7700024764 /* southpaw.jpg in Resources */,
+				7E424A3D16904FEB0002B212 /* jquery-1.6.4.js in Resources */,
+				7E424A3E16904FF30002B212 /* jquery.mobile-1.0rc2.min.js in Resources */,
+				7E42187916740B7700024764 /* stances.html in Resources */,
+				7E42187B167416A400024764 /* handwrap.html in Resources */,
+				7E424A2C169044120002B212 /* 3.0.5 in Resources */,
+				7E424A2D169044120002B212 /* handwrap in Resources */,
+				7E424A2F169044120002B212 /* jquery.mobile-1.2.0 in Resources */,
+				7E424A39169048EB0002B212 /* jquery.mobile-1.0rc2.min.css in Resources */,
+				7E424A4116905F280002B212 /* TipsIcon.png in Resources */,
+				7E424A4216905F280002B212 /* TipsIcon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E17696D1515746200D88901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1769821515746200D88901 /* main.m in Sources */,
+				7E1769861515746200D88901 /* AppDelegate.m in Sources */,
+				7E1769891515746200D88901 /* ComboViewController.m in Sources */,
+				7EA1D87E151D5F9F008A5DA7 /* ComboListViewController.m in Sources */,
+				7E88E9D0151D7D26002BB7F3 /* GalleryScrollViewController.m in Sources */,
+				7E88E9D6151D7DAD002BB7F3 /* ImageScrollView.m in Sources */,
+				7E88E9D7151D7DAD002BB7F3 /* TilingView.m in Sources */,
+				7E88E9DD151D7F31002BB7F3 /* ComboDetailViewController.m in Sources */,
+				7E88E9F7151D8F88002BB7F3 /* BaseViewController.m in Sources */,
+				7E2D51D8151DA61A00B39955 /* YoutubeViewController.m in Sources */,
+				7E2D51E0151DA67000B39955 /* GymViewController.m in Sources */,
+				7E2D51E5151DA68800B39955 /* TipsViewController.m in Sources */,
+				7E406F4E1621026000A06F6E /* VideoViewController.m in Sources */,
+				7E4218661674019D00024764 /* BoxingTipsViewController.m in Sources */,
+				7E42186B16740A2800024764 /* WebViewController.m in Sources */,
+				7E424A2E169044120002B212 /* jquery-1.8.3.min.js in Sources */,
+				7E424A38169048EB0002B212 /* jquery-1.6.4.min.js in Sources */,
+				7E424A3A169048EB0002B212 /* jquery.mobile-1.0rc2.min.js in Sources */,
+				7E424A3C16904A4A0002B212 /* jquery-1.6.4.js in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E17697E1515746200D88901 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E17697F1515746200D88901 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E17698A1515746200D88901 /* ComboViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E17698B1515746200D88901 /* en */,
+			);
+			name = ComboViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E17698D1515746200D88901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mankit Au (6YT3RQKV57)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "F9C52DA0-D878-4007-A8C7-69D62DBF8932";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E17698E1515746200D88901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mankit Au (6YT3RQKV57)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "F9C52DA0-D878-4007-A8C7-69D62DBF8932";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E1769901515746200D88901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mankit Au (6YT3RQKV57)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mankit Au (6YT3RQKV57)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Combos/Combos-Prefix.pch";
+				INFOPLIST_FILE = "Combos/Combos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F9C52DA0-D878-4007-A8C7-69D62DBF8932";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F9C52DA0-D878-4007-A8C7-69D62DBF8932";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E1769911515746200D88901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mankit Au (6YT3RQKV57)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mankit Au (6YT3RQKV57)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Combos/Combos-Prefix.pch";
+				INFOPLIST_FILE = "Combos/Combos-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F9C52DA0-D878-4007-A8C7-69D62DBF8932";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F9C52DA0-D878-4007-A8C7-69D62DBF8932";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E17696B1515746200D88901 /* Build configuration list for PBXProject "Combos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E17698D1515746200D88901 /* Debug */,
+				7E17698E1515746200D88901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E17698F1515746200D88901 /* Build configuration list for PBXNativeTarget "Dundee Boxing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1769901515746200D88901 /* Debug */,
+				7E1769911515746200D88901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E1769681515746200D88901 /* Project object */;
+}

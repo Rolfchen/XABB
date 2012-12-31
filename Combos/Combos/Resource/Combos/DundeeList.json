@@ -1,0 +1,42 @@
+{"ComboList": [
+               {"name": "Trainer Combos",
+               "Combos": [
+                          {
+                            "name": "Hand Pad Combo",
+                            "description": "This is a combo using the hand pad.",
+                            "moves": [
+                                    {"name":"1. jab, left-block, jab, straight, left-hook, straight", "description":"1. jab, left-block, jab, straight, left-hook, straight", "type":"mp4"},
+                                    {"name":"2. Right-body block, right-uppercut, left-hook, straight, right-duck", "description": "2. Right-body block, right-uppercut, left-hook, straight, right-duck", "type":"mp4"},
+                                    {"name":"3. Straight, left-hook, left-hook, straight, lean-back, straight, left-hook, straight, pull, straight, left-hook, straight", "description": "3. Straight, left-hook, left-hook, straight, lean-back, straight, left-hook, straight, pull, straight, left-hook, straight", "type":"mp4"},
+                                    {"name":"4. Left-block, straight, left-hook, left-hook, left-uppercut, left-hook, right-hook", "description":"4. Left-block, straight, left-hook, left-hook, left-uppercut, left-hook, right-hook", "type":"mp4"},
+                                    {"name":"5. Left-uppercut, right-uppercut, left-uppercut, right-uppercut, left-hook, right-hook", "description":"5. Left-uppercut, right-uppercut, left-uppercut, right-uppercut, left-hook, right-hook", "type":"mp4"}
+                                
+                                      ],
+                            "video": {
+                                "name": "HandPadCombo",
+                                "type": "mp4"
+                            }
+                          },
+                          {
+                            "name": "Kick Pad Fast Combo",
+                            "description": "This is really fast combo using the kickpads.",
+                            "moves": [
+                                    {"name": "One Two Three Four (A)", "type": "JAB"},
+                                    {"name": "One Two Three Four (B)", "type": "STRAIGHT"},
+                                    {"name": "One Two Three Four (C)", "type": "JAB"},
+                                    {"name": "One Two Three Four (D)", "type": "STRAIGHT"},
+                                    {"name": "Jab", "type": "JAB"},
+                                    {"name": "Jab", "type": "JAB"},
+                                    {"name": "Left Hook", "type": "HOOK(L)"},
+                                    {"name": "Left Upper Cut", "type": "UPPERCUT(L)"}
+                                    ],
+                            "video": {
+                                    "name": "HandPadCombo",
+                                    "type": "mp4"
+                            }
+                          }
+                          ]
+                }
+               ]
+    
+}
